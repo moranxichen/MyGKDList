@@ -20,7 +20,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          name: "推荐内容界面上的X",
+          name: '推荐内容界面上的X',
           matches: "[vid='iv_dislike']",
         },
         {
