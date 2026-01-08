@@ -10,17 +10,22 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '插屏关闭按钮-1', // 对应图 3
+          name: '插屏关闭按钮-1',
           matches: "[vid='noah_interstitial_close_button']",
         },
         {
           key: 1,
-          name: '插屏关闭按钮-2', // 对应图 5
+          name: '插屏关闭按钮-2',
           matches: "[vid='ms_activity_sdk_interstitial_cacel']",
         },
         {
           key: 2,
-          name: '右上角小叉号', // 对应图 4
+          name: "推荐内容界面上的X",
+          matches: "[vid='iv_dislike']",
+        },
+        {
+          key: 3,
+          name: '右上角小叉号',
           // 严禁使用 bounds，拆解为 left 和 top
           matches: 'ImageView[clickable=true][left=913][top=720]',
         },
