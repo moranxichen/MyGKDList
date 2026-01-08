@@ -32,7 +32,7 @@ export default defineGkdApp({
         {
           key: 4,
           name: '不感兴趣',
-          matches: "TextView[text='不感兴趣'][left=226][top=998] << [@clickable=true]",
+          matches: "[text='不感兴趣'][left=226][top=998] << [@clickable=true]",
         },
       ],
     },
