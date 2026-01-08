@@ -16,7 +16,7 @@ export default defineGkdApp({
               matches: "View[clickable=true][left=546][top=1857]",
             },
             {
-              matches: "View[clickable=true] > Image[index=0][package='com.szzc']",
+              matches: "View[clickable=true] > Image[index=0]",
               // 解释：找到一个可点击的 View，它的直接子元素是一个 index 为 0 的 Image
               // GKD 会默认点击 matches 规则中最后匹配到的那个节点。
               // 如果想点 View 而不是 Image，需要配合 << 符号：
