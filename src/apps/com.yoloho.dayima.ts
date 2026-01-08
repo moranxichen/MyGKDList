@@ -5,14 +5,25 @@ export default defineGkdApp({
   name: '大姨妈',
   groups: [
     {
-      key: 1,
+      key: 0,
       name: '弹窗广告',
       rules: [
         {
-          // 直接使用 vid (即 resource-id 的简写)
-          // 只要 ID 包含 close_button 且可点击即可
-          matches: "[vid='noah_interstitial_close_button'][clickable=true]",
+          key: 0,
+          name: "插屏关闭按钮-1", // 对应图 3
+          matches: "[vid='noah_interstitial_close_button']",
         },
+        {
+          key: 1,
+          name: "插屏关闭按钮-2", // 对应图 5
+          matches: "[vid='ms_activity_sdk_interstitial_cacel']",
+        },
+        {
+          key: 2,
+          name: "右上角小叉号", // 对应图 4
+          // 严禁使用 bounds，拆解为 left 和 top
+          matches: "ImageView[clickable=true][left=913][top=720]",
+        }
       ],
     },
   ],
