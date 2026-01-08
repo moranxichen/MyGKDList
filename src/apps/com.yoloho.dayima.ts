@@ -29,6 +29,11 @@ export default defineGkdApp({
           // 严禁使用 bounds，拆解为 left 和 top
           matches: 'ImageView[clickable=true][left=913][top=720]',
         },
+        {
+          key: 4,
+          name: '不感兴趣',
+          matches: "TextView[text='不感兴趣'][left=226][top=998] << [@clickable=true]",
+        },
       ],
     },
   ],
