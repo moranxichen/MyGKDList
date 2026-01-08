@@ -33,7 +33,7 @@ export default defineGkdApp({
           key: 4,
           name: '不感兴趣',
           matches:
-            "[id='android:id/content'][text='不感兴趣' || text='无法关闭'][visibleToUser=true] << @[clickable=true]",
+            "[id='android:id/content'][text='不感兴趣' || text='无法关闭'] << @[clickable=true]",
         },
       ],
     },
