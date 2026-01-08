@@ -32,7 +32,7 @@ export default defineGkdApp({
         {
           key: 4,
           name: '不感兴趣',
-          matches: "[text='不感兴趣'][top=998] << @[clickable=true]",
+          matches: "[text='不感兴趣' || [text='无法关闭'][top=998] << @[clickable=true]",
         },
       ],
     },
