@@ -12,7 +12,7 @@ export default defineGkdApp({
           actionMaximum: 1, // (可选) 限制最大执行次数，防止死循环
           rules: [
             {
-              matches: "View[clickable=true][package='com.szzc'][bounds^='[546,1857]']",
+              matches: "View[clickable=true][bounds^='[546,1857]']",
             },
             {
               matches: "View[clickable=true] > Image[index=0][package='com.szzc']",
